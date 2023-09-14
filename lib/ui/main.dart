@@ -1,6 +1,8 @@
+import 'package:e_comm/ui/home.dart';
 import 'package:flutter/material.dart';
 import 'catagory_list.dart';
 import 'setting.dart';
+import 'search.dart';
 import 'my_drawer.dart';
 void main() {
   runApp(const MyApp());
@@ -37,12 +39,21 @@ class _MainWidgetState  extends State<MainWidget>{
     return Scaffold(
       appBar: AppBar(
 
+
         title: Text("My Cool App"),
+        actions: _selectedIndex==0  ? ([
+          IconButton(onPressed: (){
+            showSearch(
+              context:context,
+              delegate: Mysearch(),
+            );
+          }, icon: const Icon(Icons.search))
+        ]):null,
       ),
       body: PageView(
         controller: pagecontroller,
         children: [
-          Setting(),
+          Home(),
           CatagoryList(),
           Setting(),
           Setting(),

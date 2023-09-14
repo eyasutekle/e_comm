@@ -10,7 +10,6 @@ var catagories=[
   {"image":"assets/images/bird.png", "name": "Condominum", "count": 150},
   {"image":"assets/images/bird.png", "name": "Location", "count": 310},
   {"image":"assets/images/bird.png", "name": "Shops", "count": 250},
-  {"image":"assets/images/bird.png", "name": "Villa", "count": 300},
   {"image":"assets/images/bird.png", "name": "Buildings", "count": 310},
   {"image":"assets/images/bird.png", "name": "Rent", "count": 310},
   {"image":"assets/images/bird.png", "name": "Penthouse", "count": 310},
