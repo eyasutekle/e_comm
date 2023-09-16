@@ -55,34 +55,56 @@ class CatagoryList extends StatelessWidget {
                     Expanded(child: ListView(
                       shrinkWrap: true,
                       scrollDirection: Axis.horizontal,
-                      children: news_list.map((catagory) =>
+    children: [
     Card(
     elevation: 20,
     child: Column(
     children: [
     Image.asset('assets/images/bird.png'),
       Padding(padding: EdgeInsets.only(top:10),
-        child: Text(catagory['title'].toString(), style: TextStyle(fontSize: 20))),
+        child: Text("News Text", style: TextStyle(fontSize: 20))),
 
-    Text(catagory['desc'].toString()),
+    Text("News Description"),
       Padding(padding: EdgeInsets.only(top:5),
 
       child:const Text("read more", textAlign: TextAlign.right)),
 
     ]),
+    //                   children: news_list.map((catagory) =>
+    // Card(
+    // elevation: 20,
+    // child: Column(
+    // children: [
+    // Image.asset('assets/images/bird.png'),
+    //   Padding(padding: EdgeInsets.only(top:10),
+    //     child: Text(catagory['title'].toString(), style: TextStyle(fontSize: 20))),
+    //
+    // Text(catagory['desc'].toString()),
+    //   Padding(padding: EdgeInsets.only(top:5),
+    //
+    //   child:const Text("read more", textAlign: TextAlign.right)),
+    //
+    // ]),
+    //
+    //
+    // )
+    //
+    // ).toList(),
+    //
+    //
+    //               ))
 
 
-    )
-
-    ).toList(),
-
-
-                  ))
-
-
-        ],
-      ),
+    //     ],
+    //   ),
+    // )]
     )]
-    ));
+    )
+    )
+    ]),
+    )
+    ]
+    )
+    );
   }
 }

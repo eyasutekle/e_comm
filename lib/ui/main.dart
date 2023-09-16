@@ -1,6 +1,7 @@
 import 'package:e_comm/ui/home.dart';
 import 'package:flutter/material.dart';
 import 'catagory_list.dart';
+import 'house_details.dart';
 import 'setting.dart';
 import 'search.dart';
 import 'my_drawer.dart';
@@ -55,7 +56,7 @@ class _MainWidgetState  extends State<MainWidget>{
         children: [
           Home(),
           CatagoryList(),
-          Setting(),
+          HouseDetails(5),
           Setting(),
         ],
       ),
